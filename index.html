@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz delle Bandiere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Indovina la bandiera!</h2>
+        <div class="question-container">
+            <img src="flag1.png" alt="Bandiera" class="flag-image" id="flag-img">
+            <div class="choices">
+                <button onclick="checkAnswer('USA')">USA</button>
+                <button onclick="checkAnswer('Italia')">Italia</button>
+                <button onclick="checkAnswer('Canada')">Canada</button>
+            </div>
+        </div>
+        <p id="result"></p>
+        <button id="next-question" onclick="nextQuestion()">Prossima domanda</button>
+        <p id="score">Punteggio: 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
